@@ -6,4 +6,13 @@
 @import "variables";
 
 // Bootstrap
-@import "~bootstrap-sass/assets/stylesheets/bootstrap";
+//@import "~bootstrap-sass/assets/stylesheets/bootstrap";
+
+
+//Bulma Styles
+@import './node_modules/bulma/bulma.sass';
+
+
+#app{
+	background-color:$brand-primary;
+}
