@@ -7,6 +7,7 @@
 
                     <div class="panel-body">
                         I'm an example component!
+                        <div @click="beenClicked">Clicky</div>
                     </div>
                 </div>
             </div>
@@ -17,7 +18,23 @@
 <script>
     export default {
         mounted() {
-            console.log('Component mounted.')
+           
+        },
+
+        methods:{
+            beenClicked(){
+                console.log('click');
+            }
         }
+
+
     }
 </script>
+
+<style>
+/*   @import "variables";*/
+    .panel-heading{
+        font-size:60px;
+        color:$brand-primary;
+    }
+</style>
